@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn | BPoints</title>
+
+    <!-- Google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Raleway:wght@700&display=swap" rel="stylesheet"/>
+
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Global CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/app.css"
+    />
+
+    <!-- Custom Page CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/earn.css"
+    />
+
+    <!-- JQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a class="navbar-brand" href="../">
+        <div class="icon-container">
+          <img class="icon hexagon" />
+        </div>
+        <span class="name">BPoints</span>
+      </a>
+
+      <ul class="navbar-nav">
+        <li>
+          <a href="../">
+            <img class="icon home" />
+            <span>Home</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="active">
+            <img class="icon cc" />
+            <span>Earn</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../shop">
+            <img class="icon purchases" />
+            <span>Shop</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../profile">
+            <img class="icon gift" />
+            <span>Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <header>
+        <div>
+          <img class="icon cc" />
+          <span id="balance"></span>
+        </div>
+      </header>
+      
+      <section class="intro">
+        <img src="../assets/img/earn/hero-image.webp" />
+
+        <div class="intro__heading">
+          <h2>Complete <em>OFFERS</em> to earn <em>BOBO POINTS</em><sup>&trade;</sup> !</h2>
+          <aside>Complete more OFFERS to receive more BPOINTS 💰! BPOINTS can be used in the SHOP 🛒.<br></br>NEW OFFERS will be added WEEKLY 📋</aside>
+        </div>
+      </section>
+
+      <h3 class="label">Most Popular Offers</h3>
+      
+      <div class="charts-wrapper">
+        <div class="card card--massage">
+          <div id="massage">
+            <img src="../assets/img/earn/thumbnails/massage.webp" />
+            <h2>Massage me!<pre>+75 BP</pre></h2>
+          </div>
+
+          <article>A relaxing massage, the perfect choice for sleepy Avner.</article>
+        </div>
+        
+        <div class="card card--story">
+          <div id="bedtime-story">
+            <img src="../assets/img/earn/thumbnails/bedtime-story.png" />
+            <h2>Tell a Bedtime Story<pre>+150 BP</pre></h2>
+          </div>
+          
+          <article>Yes, I'd love to hear a bedtime story!</article>
+        </div>
+      </div>
+      
+      <h3 class="label" id="oto_label">One-time Offers</h3>
+
+      <div class="charts-wrapper" id="one-time-offers">
+        <div class="card card--game">
+          <div id="guessing-game">
+            <img src="../assets/img/earn/thumbnails/game.jpg">
+            <h2>Guess a number!<pre>+80 BP</pre></h2>
+          </div>
+
+          <article>Feeling lucky today? This is just for you!</article>
+        </div>
+
+        <div class="card card--quiz">
+          <div id="quiz">
+            <img width="51%" src="../assets/img/earn/thumbnails/quiz.webp" />
+            <h2>Take a Quiz<pre>+80 BP</pre></h2>
+          </div>
+
+          <article>How much do you know? Take this fun quiz!</article>
+        </div>
+      </div>
+      <h3 class="label">Other Cool Offers</h3>
+      
+      <div class="charts-wrapper">
+        <div class="card card--milk">
+          <div id="milk">
+            <img width="50%" src="../assets/img/earn/thumbnails/milk.png">
+            <h2>Make Me Milk!<pre>+30 BP</pre></h2>
+          </div>
+
+          <article>Mmmm... I crave for some yummy milk!</article>
+        </div>
+
+        <div class="card card--daily-reward">
+          <div id="custom-offer">
+            <img width="55%" src="../assets/img/earn/thumbnails/custom-offer.webp">
+            <h2>Custom Offer<pre>+ ? BP</pre></h2>
+          </div>
+            
+          <article>BWAHAHAHA MWAHAHAHA HAHA! Anyway, here's some points</article>
+        </div>
+
+        <div class="card card--daily-reward">
+          <div id="redeem">
+            <img width="55%" src="../assets/img/earn/thumbnails/gift-card.png">
+            <h2>Redeem a Gift Card!<pre>???</pre></h2>
+          </div>
+            
+          <article>Have a gift card? Redeem it here!</article>
+        </div>
+      </div>
+      <section id="completed">
+        <h3 class="label">Completed Offers (one-time offers)</h3>
+        <div class="charts-wrapper" id="completed__div"></div>
+      </section>
+    </main>
+
+    <script src="../assets/js/global/storage.js"></script>
+    <script src="../assets/js/earn.js"></script>
+    <script src="../assets/js/redeem2.js"></script>
+  </body>
+</html>

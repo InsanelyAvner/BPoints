@@ -1,0 +1,194 @@
+:root {
+  --purple: #7f00ff;
+  --pink: #e100ff;
+  --primary-color: #5B25F5;
+  --secondary-color: #9792c7;
+  --secondary-color-with-opacity: #bab4e21f;
+  --background-color: #F5F5FD;
+  --background-color-hover: #e5e5ec;
+  --text: #9792c7;
+  --white: #fff;
+  --black: #000;
+  --gray: rgb(95, 95, 95);
+}
+
+main {
+  width: 100%;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  position: relative;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.75em 1.75em;
+  margin-left: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  color: #fff;
+  background: linear-gradient(to right, var(--purple), var(--pink));
+}
+.button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -10px;
+  left: 5%;
+  height: 110%;
+  width: 90%;
+  opacity: 0.8;
+  border-radius: 50px;
+  background: inherit;
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+  transition: all 0.2s;
+}
+.button:hover::after {
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+.button:hover:active::after {
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+@supports (-ms-ime-align: auto) {
+  .button {
+    box-shadow: 0 20px 20px -15px rgba(127, 0, 255, 0.8);
+  }
+
+  .button::after, .button:hover::after, .button:active::after {
+    display: none;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .button {
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    box-shadow: 0 20px 20px -15px rgba(127, 0, 255, 0.8);
+    border-collapse: separate;
+  }
+
+  .button::after, .button:hover::after, .button:active::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .button {
+    position: static;
+  }
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.intro .intro__heading h2 {
+  margin-left: 20px;
+  font-size: 2em;
+  color: #000;
+  word-break: break-word; 
+}
+
+.intro .intro__heading aside {
+  color: rgb(95, 95, 95);
+  margin-left: 20px;
+  margin-right: 120px;
+}
+
+.intro .intro__buttons {
+  margin-bottom: 35px;
+}
+
+.intro img {
+  margin: 60px 29px 30px 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro .intro__buttons {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro aside {
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+
+  .intro img {
+    width: 85%
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-bottom: 100px;
+  }
+
+  .card {
+    width: 88% !important;
+    height: 21em;
+  }
+}
+
+.card article {
+  color: rgb(95, 95, 95);
+}
+
+a {
+  cursor: pointer;
+}
+
+.card > div:first-of-type,
+.card > div:first-of-type img {
+  cursor: pointer;
+  text-align: -webkit-center!important;
+}
+
+.card > div:first-of-type img {
+  max-width: 50%;
+  height: auto;
+}
+
+.card article {
+  text-align: center;
+}
+
+.card aside a {
+  margin-top: 5px;
+}
+
+
+
+.card .card__comment {
+  font-size: 0.75em;
+  color: rgb(120, 120, 120);
+  display: block;
+  text-align: -webkit-center;
+  text-decoration: none;
+}

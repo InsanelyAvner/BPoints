@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | BPoints</title>
+
+    <!-- Google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Raleway:wght@700&display=swap" rel="stylesheet"/>
+
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Global CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/app.css"
+    />
+
+    <!-- Custom Page CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/shop.css"
+    />
+
+    <!-- JQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">
+        <div class="icon-container">
+          <img class="icon hexagon" />
+        </div>
+        <span class="name">BPoints</span>
+      </a>
+
+      <ul class="navbar-nav">
+        <li>
+          <a href="../">
+            <img class="icon home" />
+            <span>Home</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../earn">
+            <img class="icon cc" />
+            <span>Earn</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="active">
+            <img class="icon purchases" />
+            <span>Shop</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../profile">
+            <img class="icon gift" />
+            <span>Profile</span>
+          </a>
+        </li>
+
+      </ul>
+      <div class="navbar-footer"></div>
+    </nav>
+
+    <main>
+      <header>
+        <div>
+          <img class="icon cc" />
+          <span id="balance"></span>
+        </div>
+      </header>
+      
+      <section class="intro">
+        <img class="intro__img" src="../assets/img/shop/shop-hero.png" />
+
+        <div class="intro__heading">
+          <h2>Shop for <em>AMAZING</em> products with <em>BOBO POINTS</em><sup>&trade;</sup></h2>
+          <aside>There's a <em>wide variety</em> of products that you can <em>shop</em> with <em>BOBO POINTS</em><sup>&trade;</sup>!</aside>
+        </div>
+      </section>
+      
+      <div class="charts-wrapper">
+        <section class="card card--massage">
+          <div id="massage">
+            <img src="../assets/img/shop/thumbnails/massage.webp" />
+            <h2>Enjoy a Massage<pre></pre></h2>
+          </div>
+
+          <article>
+            Tired? A relaxing massage would be great!
+          </article>
+        </section>
+
+        <section class="card card--story">
+          <div id="bedtime-story">
+            <img src="../assets/img/shop/thumbnails/bedtime-story.png" />
+            <h2>Listen to a Bedtime Story<pre></pre></h2>
+          </div>
+
+          <article>
+            Feeling like hearing a story? This is just the right option for you!
+          </article>
+        </section>
+
+        <section class="card card--story">
+          <div id="dishwasher">
+            <img src="../assets/img/shop/thumbnails/washing-dishes.jpg" />
+            <h2>Have a dishwasher<pre>100-150 BP</pre></h2>
+          </div>
+
+          <article>
+            Dread washing the dishes? Call a professional to help you out!
+          </article>
+        </section>
+
+        <section class="card card--story">
+          <div id="escort">
+            <img src="../assets/img/shop/thumbnails/escort.jpg" />
+            <h2>Get escorted like a boss<pre></pre></h2>
+          </div>
+
+          <article>
+            [PREMIUM] Be escorted in a limousine accompanied by a fleet of military vehecles.
+          </article>
+        </section>
+
+        <section class="card card--gift">
+          <div id="gift">
+            <img src="../assets/img/shop/thumbnails/mystery-gift.png" />
+            <h2>Receive a Gift!<pre>300 BP</pre></h2>
+          </div>
+
+          <article>
+            HO HO HO, Santa's comming to give you a surprise!
+          </article>
+          <p>
+            Note: Gifts are <strong>PRE-ORDER</strong>
+          </p>
+        </section>
+
+        <section class="card card--daily-reward">
+          <div id="custom-purchase">
+            <img width="200" src="../assets/img/shop/thumbnails/custom-purchase.png">
+            <h2>Custom Purchase<pre>? BP</pre></h2>
+          </div>
+            
+          <article>
+            Want to purchase something RARE?
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <script src="../assets/js/global/storage.js"></script>
+    <script src="../assets/js/shop.js"></script>
+  </body>
+</html>

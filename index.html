@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BPoints</title>
+
+    <!-- Google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Raleway:wght@700&display=swap" rel="stylesheet"/>
+
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Page CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/app.css"
+    />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+
+  </head>
+  
+  <body>
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">
+        <div class="icon-container">
+          <img class="icon hexagon" />
+        </div>
+        <span>BPoints</span>
+      </a>
+      <ul class="navbar-nav">
+        <li>
+          <a class="active">
+            <img class="icon home" />
+            <span>Home</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="earn">
+            <img class="icon cc" />
+            <span>Earn</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="shop">
+            <img class="icon purchases" />
+            <span>Shop</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="profile">
+            <img class="icon gift" />
+            <span>Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Dashboard</h1>
+      <div class="charts-wrapper">
+        <section role="credit-card">
+          <div class="top">
+            <img src="//ozcanzaferayan.github.io/financial-crm/img/mastercard.svg" />
+            <img src="//ozcanzaferayan.github.io/financial-crm/img/apple_pay.svg" class="apple_pay" />
+          </div>
+          <div class="ccNumber">
+            <span></span>
+          </div>
+          <div class="ccBottom">
+            <div class="ccValidThru">
+              <label>VALID THRU</label>
+              <span>21/2101</span>
+            </div>
+            <div class="ccCardHolder">
+              <label>CARD HOLDER</label>
+              <span>You</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="card card--balance">
+          <img class="icon cc"/>
+          <div>
+            <h2>My Balance</h2>
+            <h1></h1>
+          </div>
+        </section>
+
+        <div class="card card--quiz">
+          <a href="earn">
+            <img width="40%" src="assets/img/home/quiz.jpg"></img>
+            <h2>Earn some points!</h2>
+          </a>
+          
+          <article>The more you earn, the more you can redeem!</article>
+        </div>
+
+        <div class="card card--reward">
+          <div>
+            <img width="60%" src="assets/img/home/daily-reward.jpg"></img>
+            <h2>Weekly Reward<pre></pre></h2>
+          </div>
+
+          <article>Log-in weekly to receive awesome rewards!</article>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/global/storage.js"></script>
+    <script src="assets/js/home.js"></script>
+
+  </body>
+</html>

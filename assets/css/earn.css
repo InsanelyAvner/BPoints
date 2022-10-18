@@ -1,0 +1,61 @@
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.intro img {
+  margin: 60px 60px 30px 30px;
+}
+
+.intro .intro__heading aside {
+  margin: 0 120px 0 20px;
+}
+
+.intro .intro__heading h2 {
+  margin-left: 20px;
+  font-size: 2em;
+  color: #000;
+}
+
+.intro .intro__heading h2 em {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro .intro__heading  aside {
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+
+  .intro img {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-bottom: 100px;
+  }
+  .card.card--game article {
+    font-size: 0.99em;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .card.card--quiz img,
+  .card.card--reward img {
+    width: 75%;
+    max-width: 75%;
+  }
+}
+
+.label {
+  margin: 20px 0px 50px 30px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeem | BPoints</title>
+
+    <!-- Google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Raleway:wght@700&display=swap" rel="stylesheet"/>
+
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Global CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/app.css"
+    />
+
+    <!-- Custom Page CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/redeem.css"
+    />
+
+    <!-- JQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">
+        <div class="icon-container">
+          <img class="icon hexagon" />
+        </div>
+        <span class="name">BPoints</span>
+      </a>
+
+      <ul class="navbar-nav">
+        <li>
+          <a href="../">
+            <img class="icon home" />
+            <span>Home</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../earn">
+            <img class="icon cc" />
+            <span>Earn</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../shop">
+            <img class="icon purchases" />
+            <span>Shop</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="active">
+            <img class="icon gift" />
+            <span>Redeem</span>
+          </a>
+        </li>
+
+      </ul>
+      <div class="navbar-footer"></div>
+    </nav>
+
+    <main>
+      <header>
+        <div>
+          <img class="icon cc" />
+          <span id="balance"></span>
+        </div>
+      </header>
+      
+      <section class="intro">
+        <div>
+          <img width="500" src="../assets/img/redeem/redeem-hero.png" />
+        </div>
+
+        <div>
+          <div class="intro__heading">
+            <h2>Seeking for some GIFT CARDS?</h2>
+            <aside>Looking for a BOOST? ⚡ Here's some MYSTERY BAGS 🔮 to help you out! 💳</aside>
+          </div>
+          
+          <div class="intro__buttons">
+            <button class="button" id="shop--scrollto">Shop 🛒</button>
+            <button class="button" id="redeem">Redeem a card 💲</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="charts-wrapper" id="shop">
+
+        <section class="card">
+          <div>
+            <img width="275" src="../assets/img/redeem/bag-1.png" onload="this.className='animate'" />
+            <h2>Mystery Bag I<pre>+ 2 - 150 BP</pre></h2>
+          </div>
+
+          <article>Too little points? Try buying this great bundle! (SGD 1.99)</article>
+          <aside>
+            <a
+              href="./terms-and-conditions.pdf"
+              target="_blank"
+              class="card__comment"
+            >
+              Terms and Conditions apply ⚠️
+            </a>
+          </aside>
+        </section>
+
+
+        <section class="card">
+          <div>
+            <img src="../assets/img/redeem/bag-2.jpg" />
+            <h2>Mystery Bag II<pre>+ 4 - 400 BP</pre></h2>
+          </div>
+
+          <article>Too little points? Try buying this great bundle! (SGD 4.99)</article>
+          <aside>
+            <a
+              href="./terms-and-conditions.pdf"
+              target="_blank"
+              class="card__comment"
+            >
+              <span>Terms and Conditions apply ⚠️</span>
+            </a>
+          </aside>
+          
+        </section>
+
+      </div>
+    </main>
+
+    <script src="../assets/js/redeem.js"></script>
+  </body>
+</html>
